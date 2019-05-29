@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css">
+<link rel="stylesheet" href="assets/css/style.css">
+<title>Tippa</title>
+</head>
+<body>
+  <div class="jumbotron">
+    <h1>Tippa</h1> The fast and easy way to figure out how much to tip! 
+    
+  </div>
+  <div class="container">
+  <form>
+      <div class="form-group">
+        <label for="exampleFormControlInput1">Total (BEFORE tax or added gratuity)</label>
+        <input type="input" class="form-control" id="total">
+      </div>
+      <div class="form-group">
+        <label for="exampleFormControlSelect1">Tip Percent</label>
+        <select class="form-control" id="tip">
+          <option>15</option>
+          <option>18</option>
+          <option>20</option>
+        </select>
+      </div>
+      <div class="form-group">
+          <label for="exampleFormControlInput1">Number of people splitting the bill</label>
+          <input type="number" class="form-control" id="people">
+        </div>
+
+        <button id="calculate" class="btn btn-info">What's my tip?</button>
+
+        <h2 class="text-center" id="calculatedTip"></h2>
+     
+    </form>
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@8"></script>
+<script src="assets/js/javascript.js"></script>
+</body>
+</html>
