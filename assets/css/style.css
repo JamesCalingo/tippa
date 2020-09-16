@@ -1,3 +1,4 @@
-body{
-  background: chartreuse
+.jumbotron{
+ background: green;
+ color: white;
 }
