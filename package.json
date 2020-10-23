@@ -1,0 +1,25 @@
+{
+  "name": "Tippa",
+  "version": "1.0.0",
+  "description": "A very simple application that calculates how much one should tip at the end of their meal.",
+  "main": "index.js",
+  "dependencies": {
+    "jest": "^26.6.0",
+    "jquery": "^3.5.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JamesCalingo/Tippa.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JamesCalingo/Tippa/issues"
+  },
+  "homepage": "https://github.com/JamesCalingo/Tippa#readme"
+}

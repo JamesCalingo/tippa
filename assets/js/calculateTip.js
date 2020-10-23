@@ -1,9 +1,11 @@
+let $ = require('jquery')
+
 function clear () {
   $('#total').val('')
   $('#people').val('')
 }
 
-function calculateTip(total, percent, people){
+function calculateTip(total, percent, people) {
 
 var tip = total * percent
 var $tip = tip.toFixed(2)
@@ -34,20 +36,22 @@ if (people < 1 || total < 1) {
 if (people == 1) {
   $('#calculatedTip').html(`You should tip <strong>$${$tip}</strong>!`)
   clear()
+  return $tip
 }
 
 if (people > 1) {
   $('#calculatedTip').html(`Your total tip is <strong>$${$tip}</strong>. Divided amongst the ${people} of you, each person should chip in <strong>$${$tipDivide}</strong>.<br>
   (This is assuming you all split the bill evenly)`)
   clear()
+  return $tip
 }
 }
 
 $('#calculate').on('click', function (event) {
   event.preventDefault()
-  let total = $('#total').val().trim()
-let percent = $('#tip').val().trim() / 100
-let people = $('#people').val().trim()
-  calculateTip()
+  let $total = $('#total').val().trim()
+let $percent = $('#tip').val().trim() / 100
+let $people = $('#people').val().trim()
+  calculateTip($total, $percent, $people)
   
 })
