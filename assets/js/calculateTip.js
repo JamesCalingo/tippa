@@ -39,14 +39,14 @@ function calculateTip(total, percent, people) {
   }
 
   if (people == 1) {
-    $('#calculatedTip').html(`You should tip <strong>$${$tip}</strong>!`)
+    $('#calculated-tip').html(`You should tip <strong>$${$tip}</strong>!`)
     clear()
     return $tip
   }
 
   if (people > 1) {
-    $('#calculatedTip').html(`Your total tip is <strong>$${$tip}</strong>. Divided amongst the ${people} of you, each person should chip in <strong>$${$tipDivide}</strong>.<br>
-  (This is assuming you all split the bill evenly)`)
+    $('#calculated-tip').html(`Your total tip is <strong>$${$tip}</strong>. Divided amongst the ${people} of you, each person should chip in <strong>$${$tipDivide}</strong>.<br>
+  (This is assuming you split the tip evenly)`)
     clear()
     return $tip
   }

@@ -68,4 +68,8 @@ form {
         height: 50px;
         font-size: 18pt;
     }
+    #calculated-tip {
+      margin-left: 20%;
+      margin-right: 20%;
+    }
   }
