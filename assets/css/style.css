@@ -4,8 +4,6 @@ body {
 }
 
 footer {
-    /* position: absolute; */
-    /* bottom: 1%; */
     width: 100%;
     text-align: center;
 }
@@ -38,6 +36,13 @@ form {
     font-size: 14pt;
 }
 
+.btn {
+    width: 150px;
+    height: 50px;
+    border-radius: 32px;
+    background-color: turquoise;
+}
+
 #info{
     color: blue;
     font-size: 18pt;
@@ -46,13 +51,6 @@ form {
 #button {
     display: flex;
     justify-content: space-around;
-}
-
-.btn {
-    width: 150px;
-    height: 50px;
-    border-radius: 32px;
-    background-color: turquoise;
 }
 
 @media only screen and (min-width: 1000px) {
